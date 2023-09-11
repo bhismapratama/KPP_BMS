@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="wrap">
-      <h1>haloo</h1>
+      <h1>Hai gais kelompok 11</h1>
     </div>
   </div>
 </template>
