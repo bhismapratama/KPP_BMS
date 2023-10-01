@@ -1,20 +1,15 @@
-<template>
-  <div class="main">
-    <div class="wrap">
-      <h1>Hai gais kelompok 11</h1>
-    </div>
-  </div>
-</template>
+<script setup>
 
-<script>
+import Header from './layouts/Header.vue';
+import Main from './layouts/Main.vue';
+import Footer from './layouts/Footer.vue';
 
 </script>
 
-<style>
-*, html, body {
-  font-family: 'poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-</style>
+<template>
+    <Header/>
+    <Main/>
+    <Footer />
+</template>
+
+<style scoped></style>
