@@ -1,11 +1,11 @@
 <script setup>
-import herosection from "../sections/herosection.vue";
+import HeroSection from "../sections/HeroSection.vue";
 import OurPortfolio from "../sections/OurPortfolio.vue";
 import OurTeamVue from "../sections/OurTeam.vue";
 </script>
 
 <template>
-    <herosection />
+    <Herosection />
     <OurTeamVue/>
     <OurPortfolio />
 </template>
