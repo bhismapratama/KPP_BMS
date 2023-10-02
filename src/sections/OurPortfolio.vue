@@ -8,7 +8,7 @@ let isOpen = ref(1);
 </script>
 
 <template>
-    <div id="portfolio" class="container mx-auto px-20 2xl:container bg-ijo pt-2 pb-20 bg-contain bg-no-repeat justify-center bg-[url('/our-Portfolio.png')]">
+    <div id="portfolio" class="container mx-auto px-20 2xl:container bg-ijo pt-2 pb-20 bg-contain bg-no-repeat justify-center bg-[url('/our-portfolio.png')]">
         <section class="py-16 mt-16">
             <div class="w-4/5 md:w-3/5 mx-auto">
                 <h2 class="text-3xl text-white md:text-4xl font-semibold font-theme-heading text-center">OUR Portfolio</h2>
