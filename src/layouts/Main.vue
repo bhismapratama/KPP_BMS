@@ -5,7 +5,7 @@ import OurTeamVue from "../sections/OurTeam.vue";
 </script>
 
 <template>
-    <Herosection />
+    <HeroSection/>
     <OurTeamVue/>
     <OurPortfolio />
 </template>

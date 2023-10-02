@@ -1,7 +1,7 @@
 <script setup>
 
 import { ref } from 'vue';
-import Portfolio from '../data/Portfolio';
+import Portfolio from '../data/PortfolioData';
 
 let isOpen = ref(1);
 
@@ -16,23 +16,23 @@ let isOpen = ref(1);
 
             <div class="mt-10">
                 <ul class="flex flex-col items-center md:flex-row justify-center font-theme-heading">
-                    <li v-for="Portfolio in Portfolio" :key="Portfolio.id" :class="isOpen === Portfolio.id ? 'md:border-b-4 md:border-kuning' : ''" class="w-full md:w-56 cursor-pointer hover:text-kuning transition duration-200 border-b-2 border-t-2 md:border-t-0 flex justify-center text-white">
-                        <a @click.prevent="isOpen = Portfolio.id" href="#" :class="isOpen === Portfolio.id ? 'text-kuning' : ''" class="py-5  md:border-b-0 border-b-4">{{ Portfolio.name }}</a>
+                    <li v-for="Portfolios in Portfolio" :key="Portfolios.id" :class="isOpen === Portfolios.id ? 'md:border-b-4 md:border-kuning' : ''" class="w-full md:w-56 cursor-pointer hover:text-kuning transition duration-200 border-b-2 border-t-2 md:border-t-0 flex justify-center text-white">
+                        <a @click.prevent="isOpen = Portfolios.id" href="#" :class="isOpen === Portfolios.id ? 'text-kuning' : ''" class="py-5  md:border-b-0 border-b-4">{{ Portfolios.name }}</a>
                     </li>
                 </ul>
             </div>
 
             <div class="mt-16">
-                <template v-for="Portfolio in Portfolio" :key="Portfolio.id">
-                    <div v-show="isOpen === Portfolio.id" class="grid gap-32 lg:grid-cols-2 items-center">
+                <template v-for="Portfolios in Portfolio" :key="Portfolios.id">
+                    <div v-show="isOpen === Portfolios.id" class="grid gap-32 lg:grid-cols-2 items-center">
                         <div class="relative">
-                            <img class="z-10 w-full" :src="Portfolio.details.imageUrl" />
+                            <img class="z-10 w-full" :src="Portfolios.details.imageUrl" />
                         </div>
                         <div>
-                            <h3 class="text-[14px] text-2xl md:text-3xl font-medium text-center text-kuning lg:text-left">{{ Portfolio.details.title }}</h3>
-                            <p class="mt-7 font-theme-content text-lg text-white text-center lg:text-left">{{ Portfolio.details.description }}</p>
+                            <h3 class="text-[14px] text-2xl md:text-3xl font-medium text-center text-kuning lg:text-left">{{ Portfolios.details.title }}</h3>
+                            <p class="mt-7 font-theme-content text-lg text-white text-center lg:text-left">{{ Portfolios.details.description }}</p>
                             <div class="flex justify-center lg:justify-start mt-7">
-                                <LinkButton btn-type="primary" :link="Portfolio.details.link">Let&apos;s Connect</LinkButton>
+                                <LinkButton btn-type="primary" :link="Portfolios.details.link">Let&apos;s Connect</LinkButton>
                             </div>
                         </div>
                     </div>

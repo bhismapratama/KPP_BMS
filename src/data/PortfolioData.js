@@ -1,4 +1,4 @@
-const portfolio = [
+const Portfolio = [
     {
         id: 1,
         name: "Bhisma Ep",
@@ -41,4 +41,4 @@ const portfolio = [
     },
 ];
 
-export default portfolio;
+export default Portfolio;
